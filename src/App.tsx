@@ -23,7 +23,7 @@ function App() {
 		if (value.trim() === "") {
 			return
 		}
-		const newTodo = { id: uuidv4(), title: value }
+		const newTodo = { id: uuidv4(), title: value, completed: false }
 		const newTodos = [...todos, newTodo]
 
 		setTodos(newTodos)
